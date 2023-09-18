@@ -1,4 +1,5 @@
 import React from "react";
+import RootLayout from "../../../components/Layouts/RootLayout";
 
 const ProductsHomePage = () => {
   return (
@@ -9,3 +10,7 @@ const ProductsHomePage = () => {
 };
 
 export default ProductsHomePage;
+
+ProductsHomePage.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
